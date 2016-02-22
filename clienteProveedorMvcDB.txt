@@ -1,0 +1,47 @@
+CREATE DATABASE TRIIVMVC;
+
+USE TRIIVMVC;
+
+CREATE TABLE USUARIO (
+idUsuario INT AUTO_INCREMENT PRIMARY KEY,
+usuario VARCHAR (25),
+contrasena VARCHAR (25));
+
+INSERT INTO USUARIO (usuario,contrasena) VALUES ('cellhig','polinomio');
+
+
+-----------------------------------------------------------------------------
+
+
+CREATE TABLE CLIENTE (
+    
+    idCliente INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR (30),
+    apellido VARCHAR (30),
+    identificacion VARCHAR (20),
+    telefono VARCHAR (15),
+    direccion VARCHAR (50)
+    
+);
+
+INSERT INTO cliente (nombre, apellido, identificacion, telefono, direccion) VALUES ('hector','gomez','1047','25511','crr55 # 5');
+
+
+
+-----------------------------------------------------------------------------
+
+
+CREATE TABLE PROVEEDOR (
+    
+    idProveedor INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR (30),
+    identificacion VARCHAR (20),    
+    telefono VARCHAR (15),
+    direccion VARCHAR (50),
+    url VARCHAR (55)
+    
+);
+
+
+
+INSERT INTO proveedor(nombre, identificacion, telefono, direccion, url) VALUES ('bonem','11122','3604040','Cll 6sur # 50c-104','www.bonem.com.co')
